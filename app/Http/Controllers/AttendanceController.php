@@ -102,7 +102,7 @@ class AttendanceController extends Controller
             $applied_leave->appliedLeaveSegregations[0]->to_date = $newdate;
             $applied_leave->appliedLeaveSegregations[0]->created_at = $newdatetime;
             $applied_leave->appliedLeaveSegregations[0]->updated_at = $newdatetime;
-            $applied_leave->appliedLeaveSegregations[0]->from_date = $newdate; 
+            $applied_leave->appliedLeaveSegregations[0]->from_date = $newdate;
             $applied_leave->appliedLeaveSegregations[0]->save();
 
             $applied_leave->appliedLeaveApprovals[0]->created_at = $newdatetime;
