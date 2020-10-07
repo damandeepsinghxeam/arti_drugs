@@ -484,6 +484,7 @@ class UserController extends Controller
         $data['independence_day'] = Holiday::whereRaw('YEAR(curdate()) = YEAR(holiday_from) AND DAY(holiday_from)=15' )->first();
 
         $data['probation_data'] = probationCalculations($user_info);
+        // dd($data['probation_data']);
         $data['attendances_info'] = DB::table("employees")->select('id', 'user_id', 'fullname', 'mobile_number')->whereNotIn('user_id',function($query) {
             $query->select('user_id')->where('on_date', date("Y-m-d"))->from('attendances');
         })

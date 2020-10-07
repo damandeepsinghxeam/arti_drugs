@@ -260,7 +260,7 @@
              <span class="fc-title"><?php echo  $attendanceArray['first_punch']; ?></span>
           </a>
           @if(@$attendanceArray['first_punch_type'] != 'NA')
-            <a href="{{$mapUrl}}" target="_blank"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
+            <a href="{{$mapUrl}}" target="_blank"><span><i class="" aria-hidden="true"></i></span></a>
           @endif
           </div>
           <?php } 
@@ -271,7 +271,8 @@
              <span class="fc-title"><?php echo  $attendanceArray['last_punch']; ?></span>
           </a>
           @if(@$attendanceArray['last_punch_type'] != 'NA')
-            <a href="{{$mapUrl}}" target="_blank"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span></a>
+            <a href="{{$mapUrl}}" target="_blank"><span><i class="" aria-hidden="true"></i></span></a>
+            <!-- <a href="{{$mapUrl}}" target="_blank"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span></a> -->
           @endif
           </div>
           <?php } ?>
@@ -471,9 +472,10 @@ $(document).ready(function(){
           }
 
           if(item.type == 'Check-In'){
-            info += '<a href="'+mapUrl+'" target="_blank"><span class="label label-warning"> Check-In  &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i></span></a></div>';
+            info += '<a href="" target=""><span class="label label-warning"> Check-In  &nbsp;<i class="" aria-hidden="true"></i></span></a></div>';
           }else if(item.type == 'Check-Out'){
-            info += '<a href="'+mapUrl+'" target="_blank"><span class="label label-danger"> Check-Out  &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i></span></a></div>';
+            // info += '<a href="'+mapUrl+'" target="_blank"><span class="label label-danger"> Check-Out  &nbsp;<i class="fa fa-map-marker" aria-hidden="true"></i></span></a></div>';
+            info += '<a href="" target=""><span class="label label-danger"> Check-Out  &nbsp;<i class="" aria-hidden="true"></i></span></a></div>';
           }else{
             info += '</div>';
           }

@@ -135,28 +135,28 @@ if(!empty($usser)) {
 {{--                </li>--}}
 {{--            @endcan--}}
 
-{{--            <li class="treeview">--}}
-{{--                <a href="#">--}}
-{{--                    <i class="fa fa-plane fa-lg"></i> <span>Leaves Management</span>--}}
-{{--                    <span class="pull-right-container">--}}
-{{--                    <i class="fa fa-angle-left pull-right"></i>--}}
-{{--                  </span>--}}
-{{--                </a>--}}
-{{--                <ul class="treeview-menu">--}}
-{{--                    <li class=""><a title="Apply for leave" href="{{ url('leaves/apply-leave') }}"><i class="fa fa-circle-o text-red"></i>Apply for leave</a></li>--}}
+            <li class="treeview">
+                <a href="#">
+                   <i class="fa fa-plane fa-lg"></i> <span>Leaves Management</span>
+                   <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                 </span>
+                </a>
+               <ul class="treeview-menu">
+                  <li class=""><a title="Apply for leave" href="{{ url('leaves/apply-leave') }}"><i class="fa fa-circle-o text-red"></i>Apply for leave</a></li>
 
-{{--                    <li class=""><a title="List of applied leave" href="{{ url('leaves/applied-leaves') }}"><i class="fa fa-circle-o text-aqua"></i>Applied Leaves</a></li>--}}
+                 <li class=""><a title="List of applied leave" href="{{ url('leaves/applied-leaves') }}"><i class="fa fa-circle-o text-aqua"></i>Applied Leaves</a></li>
 
-{{--                    @can('approve-leave')--}}
-{{--                        <li class=""><a title="list of Approval Employee's leave" href="{{ url('leaves/approve-leaves') }}"><i class="fa fa-circle-o text-success"></i>Approve Leaves</a></li>--}}
+                    @can('approve-leave')
+                       <li class=""><a title="list of Approval Employee's leave" href="{{ url('leaves/approve-leaves') }}"><i class="fa fa-circle-o text-success"></i>Approve Leaves</a></li>
 
-{{--                        <li class=""><a title="View leave report" href="{{ url('leaves/leave-report-form') }}"><i class="fa fa-circle-o text-red"></i>Leave Report</a></li>--}}
-{{--                @endcan--}}
-{{--                <!-- <li class=""><a href="{{ url('leaves/policies') }}"><i class="fa fa-circle-o text-warning"></i>Leave Policies</a></li> -->--}}
-{{--                    <!-- <li class=""><a href="javascript:void(0)"><i class="fa fa-circle-o text-primary"></i>Leave Allotment</a></li> -->--}}
-{{--                    <li class=""><a href="{{ url('leaves/holidays') }}"><i class="fa fa-circle-o text-secondary"></i>Holidays List</a></li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
+                        <li class=""><a title="View leave report" href="{{ url('leaves/leave-report-form') }}"><i class="fa fa-circle-o text-red"></i>Leave Report</a></li>
+               @endcan
+               <!-- <li class=""><a href="{{ url('leaves/policies') }}"><i class="fa fa-circle-o text-warning"></i>Leave Policies</a></li> -->
+                   <!-- <li class=""><a href="javascript:void(0)"><i class="fa fa-circle-o text-primary"></i>Leave Allotment</a></li> -->
+                   <li class=""><a href="{{ url('leaves/holidays') }}"><i class="fa fa-circle-o text-secondary"></i>Holidays List</a></li>
+              </ul>
+          </li>
 
             <li class="treeview">
                 <a href="#">
